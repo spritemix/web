@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <style>
+        /* Basic styling for the search bar */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222; /* Dark background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Center vertically */
+        }
+        .search-container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: #333; /* Darker container background */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+            text-align: center; /* Center the content horizontally */
+            margin: 0 auto; /* Center the container horizontally */
+        }
+        .search-input {
+            width: 100%;
+            padding: 15px; /* Increased padding for a bigger search bar */
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #444; /* Darker input background */
+            color: #fff; /* Text color */
+            transition: background-color 0.3s ease; /* Smooth transition effect */
+        }
+        .search-input:focus {
+            background-color: #555; /* Darker input background on focus */
+        }
+        .search-button {
+            background-color: #333; /* Darker button background */
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 15px 20px; /* Increased padding for a bigger button */
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth transition effect */
+        }
+        .search-button:hover {
+            background-color: #222; /* Slightly darker on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <form method="get" action="http://www.google.com/search">
+            <input type="hidden" name="sitesearch" value="" />
+            <input class="search-input" type="text" name="q" placeholder="Search Google...">
+            <button class="search-button" type="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html>
